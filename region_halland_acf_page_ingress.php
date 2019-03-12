@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland ACF Page Ingress
 	Description: ACF-fält för ingress högst upp på en sida
-	Version: 1.0.0
+	Version: 1.1.0
 	Author: Roland Hydén
 	License: MIT
 	Text Domain: regionhalland
@@ -25,6 +25,25 @@
 			    'title' => ' ',
 			    'fields' => array(
 			        0 => array(
+			        	'key' => 'field_1000118',
+			            'label' => __('Navigation', 'regionhalland'),
+			            'name' => 'name_1000119',
+			            'type' => 'text',
+			            'instructions' => __('Skriv din navigations-text här', 'regionhalland'),
+			            'required' => 0,
+			            'conditional_logic' => 0,
+			            'wrapper' => array(
+			                'width' => '',
+			                'class' => '',
+			                'id' => '',
+			            ),
+			            'default_value' => '',
+			            'placeholder' => '',
+			            'prepend' => '',
+			            'append' => '',
+			            'maxlength' => '',
+			        ),
+			        1 => array(
 			        	'key' => 'field_1000108',
 			            'label' => __('Ingress', 'regionhalland'),
 			            'name' => 'name_1000109',
@@ -78,6 +97,11 @@
 	// Returnera ingress
 	function get_region_halland_acf_page_ingress() {
 		return get_field('name_1000109');	
+	}
+
+	// Returnera navigation text
+	function get_region_halland_acf_page_navigation_text() {
+		return get_field('name_1000119');	
 	}
 	
 	// Metod som anropas när pluginen aktiveras

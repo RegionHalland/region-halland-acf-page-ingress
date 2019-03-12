@@ -59,8 +59,18 @@ OBS! Justera så att du hämtar aktuell version.
 </div>
 ```
 
+## Visa navigation-texten på en sida via "Blade"
+
+```sh
+<div>
+  {{ get_region_halland_acf_page_navigation_text() }}
+</div>
+```
 
 ## Versionhistorik
+
+### 1.1.0
+- Lagt till en extra kolumn för navigation text
 
 ### 1.0.0
 - Första version
