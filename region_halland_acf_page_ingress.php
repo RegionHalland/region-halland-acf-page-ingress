@@ -100,8 +100,8 @@
 	}
 
 	// Returnera navigation text
-	function get_region_halland_acf_page_navigation_text() {
-		return get_field('name_1000119');	
+	function get_region_halland_acf_page_navigation_text($id) {
+		return get_field('name_1000119', $id);	
 	}
 	
 	// Metod som anropas när pluginen aktiveras

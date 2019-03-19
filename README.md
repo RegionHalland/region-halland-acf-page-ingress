@@ -61,13 +61,18 @@ OBS! Justera så att du hämtar aktuell version.
 
 ## Visa navigation-texten på en sida via "Blade"
 
+OBS! Notera att man i en navigation måste ange även ID för den post man vill visa 
+
 ```sh
 <div>
-  {{ get_region_halland_acf_page_navigation_text() }}
+  {{ get_region_halland_acf_page_navigation_text(116) }}
 </div>
 ```
 
 ## Versionhistorik
+
+### 1.1.1
+- Lagt till ID till navigation text
 
 ### 1.1.0
 - Lagt till en extra kolumn för navigation text
