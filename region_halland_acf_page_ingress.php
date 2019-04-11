@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland ACF Page Ingress
 	Description: ACF-fält för ingress högst upp på en sida
-	Version: 1.1.0
+	Version: 1.1.2
 	Author: Roland Hydén
 	License: MIT
 	Text Domain: regionhalland
@@ -95,8 +95,12 @@
 	}
 
 	// Returnera ingress
-	function get_region_halland_acf_page_ingress() {
-		return get_field('name_1000109');	
+	function get_region_halland_acf_page_ingress($id = 0) {
+		if ($id == 0) {
+			return get_field('name_1000109');	
+		} else {
+			return get_field('name_1000109', $id);	
+		}
 	}
 
 	// Returnera navigation text

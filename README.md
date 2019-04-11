@@ -71,6 +71,9 @@ OBS! Notera att man i en navigation måste ange även ID för den post man vill 
 
 ## Versionhistorik
 
+### 1.1.2
+- Lagt till ID till ingress text
+
 ### 1.1.1
 - Lagt till ID till navigation text
 
