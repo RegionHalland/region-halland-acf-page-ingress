@@ -6,7 +6,7 @@
 	/*
 	Plugin Name: Region Halland ACF Page Ingress
 	Description: ACF-fält för ingress högst upp på en sida
-	Version: 1.2.0
+	Version: 1.3.0
 	Author: Roland Hydén
 	License: GPL-3.0
 	Text Domain: regionhalland
